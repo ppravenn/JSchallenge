@@ -1,0 +1,139 @@
+.hidden {
+    display: none;
+}
+.opacitys{
+    opacity: 0;
+}
+#wrap{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
+#first {
+   margin: 100px auto;
+    text-align: center;
+}
+
+#first #clock {
+    font-size: 100px;
+    color: red;
+    margin-bottom: 100px;
+}
+
+#form {
+    max-width: 100px;
+}
+
+#form_id>input {
+    width: 60%;
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 20px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid yellowgreen;
+}
+
+#logoutBtn{
+    font-size: 24px;
+    background: none;
+    cursor: pointer;
+    border: none;
+}
+#wrap2 {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%;
+    padding: 20px;
+    background: rgba(245, 222, 179, 0.8);
+    border-radius: 25px;
+    
+}
+.newStyle{
+    opacity: 1;
+    transform: translateY(8%);
+    transition: all 1s;
+}
+#todoNick{
+    flex-basis: 30%;
+    word-break: break-all;
+    margin: 10px;
+}
+#nicks{
+    margin-top: 10px;
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+}
+#nicks::after{
+    content: '';
+   display: block;
+   width: 80%;
+   border-bottom: 1px solid #ddd;
+   margin: 8px auto;
+
+}
+#talkman{
+  margin-top: 50px;
+  text-align: center;
+}
+#talkman .one{
+    line-height: 1.3em;
+}
+#talkman .two{
+    margin-top: 10px;
+}
+#todoz{
+    width: 30%;
+    border: 1px solid red;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #ddd;
+    height: 250px;
+    flex-basis: 30%;
+}
+#todoz #input_todo{
+    width: 100%;
+    border: none;
+    background: #ddd;
+    border-bottom: 2px solid gray;
+    margin-bottom: 5px;
+}
+#input_todo::placeholder{
+    color: #000;
+}
+#todolist{
+    width: 100%;
+    overflow-y: auto;
+    height: 230px;
+}
+#todolist li{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d3d3d3;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.line{
+    text-decoration: line-through;
+}
+#weather{
+    flex-basis: 30%;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+#weather span{
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+}

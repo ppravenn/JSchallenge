@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <title>nomardEX</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="first">
+            <div id="clock"></div>
+            <form id="form_id">
+                <input type="text" maxlength="10" required placeholder="10자 이내 아이디 입력" id="form_input">
+            </form>
+        </div>
+        <div id="all" class="opacitys">
+            <div id="wrap2" >
+                <div id="todoNick">
+                   <div id="nicks">
+                        <span id="nickname" class="hidden"></span>
+                        <button id="logoutBtn" type="button" class="hidden" title="로그아웃">💥</button>
+                   </div>
+                    <div id="talkman">
+                        <p class="one"></p>
+                        <p class="two"></p>
+                    </div>
+                </div>
+                <div id="todoz">
+                    <form id="form_todo">
+                        <input type="text" id="input_todo" placeholder="할 일을 입력하세요">
+                    </form>
+                    <ul id="todolist"></ul>
+                </div>
+                <div id="weather">
+                    <span id="dong"></span>
+                    <span id="temp1"></span>
+                    <span id="min"></span>
+                    <span id="tem"></span>
+                    <span id="max"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/ranimg.js"></script>
+    <script src="./js/talk.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/weather.js"></script>
+</body>
+
+</html>

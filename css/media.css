@@ -1,0 +1,39 @@
+@media(max-width:1440px){
+    #first #clock{
+        font-size: 80px;
+    }
+}
+@media(max-width:1215px){
+    
+    #first #clock{
+        font-size: 80px;
+        padding-bottom: 20px;
+    }
+    #wrap2{
+        display: block;
+        top: 40%;
+        max-width: 1000px;
+    }
+    #talkman{
+        height: 100px;
+        margin-bottom: 10px;
+    }
+    #todoz{
+        width: 80%;
+        margin: 0 auto;
+    }
+    #weather{
+        width: 85%;
+    }
+    #weather span{
+        display: inline-block;
+        font-size: 15px;
+    }
+    #weather span:first-child{
+        width: 50%;
+        font-size: 15px;
+    }
+    #weather span:nth-child(2){
+        width: 40%;
+    }
+}
