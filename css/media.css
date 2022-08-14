@@ -4,7 +4,13 @@
     }
 }
 @media(max-width:1215px){
-    
+    body{
+        overflow: hidden;
+    }
+    img{
+        height: 150vh;
+        overflow: hidden;
+    }
     #first #clock{
         font-size: 80px;
         padding-bottom: 20px;
