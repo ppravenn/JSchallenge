@@ -26,6 +26,7 @@ function todopaint(myTodo) {
     li.id = myTodo.id;
     const span = document.createElement("span");
     span.innerText = myTodo.text;
+    span.className = myTodo.class;
     span.addEventListener("click", lineThrough);
     const button = document.createElement("button");
     button.innerText = "❌"
