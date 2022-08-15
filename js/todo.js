@@ -58,9 +58,21 @@ function submittodo(e) {
 }
 
 //줄긋기 토글
-function lineThrough(event){
-    const line=event.target;
-    line.classList.toggle(LINE)
+function lineThrough(event) {
+    const line = event.target;
+    const lineT = parseInt(line.parentNode.id);
+    const newGet = JSON.parse(localStorage.getItem(TODOGET));
+
+    for (let i in newGet) {
+        if (newGet[i].id == lineT && newGet[i].class == "") {
+            newGet[i].class = "line"
+            line.classList.add(LINE);
+        } else if (newGet[i].id == lineT && newGet[i].class == "line") {
+            newGet[i].class = ""
+            line.classList.remove(LINE);
+        }
+    }
+    localStorage.setItem(TODOGET, JSON.stringify(newGet))
 }
 
 //전송 이벤트
