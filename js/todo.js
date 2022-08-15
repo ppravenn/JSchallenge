@@ -47,6 +47,7 @@ function submittodo(e) {
         const todoObj = {
             text: todov,
             id: Date.now(),
+            class:""
         };
         todos.push(todoObj);
         localTodo();
